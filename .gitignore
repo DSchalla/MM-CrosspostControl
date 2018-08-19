@@ -1,0 +1,12 @@
+# Ignore Vendor Directory
+/vendor/
+
+# Ignore IntelliJ
+*.iml
+/.idea/
+
+# Ignore Config Directory, Build and Config File
+/config/
+claptrap
+config.yaml
+*.tar.gz

@@ -1,0 +1,23 @@
+id: com.dschalla.crosspostcontrol
+name: Crosspost Control
+description: Detect and react on crossposts across your Mattermost Team
+backend:
+  executable: crosspostcontrol
+settings_schema:
+  settings:
+  - key: matching
+    display_name: Matching Mode
+    type: dropdown
+    options:
+      - display_name: Exact Matches
+        value: exact
+      - display_name: Fuzzy Matching
+        value: fuzzy
+  - key: mode
+    display_name: Control Mode
+    type: dropdown
+    options:
+      - display_name: Request confirmation via Ephemeral Message?
+        value: confirm_ephemeral
+      - display_name: Deny Message with reference to first message?
+        value: deny_message
